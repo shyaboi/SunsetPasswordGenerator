@@ -44,7 +44,7 @@ generateEl.addEventListener('click', () => {
   const hasNumber = numberEl.checked;
   const hassymbol = symbolEl.checked;
 
-// password text handoff.
+  // password text handoff.
   passwordEl.innerText = generatePassword(
     hasLower,
     hasUpper,
@@ -56,8 +56,15 @@ generateEl.addEventListener('click', () => {
 });
 
 // password gen function
-function generatePassword(lower, upper, number, symbol,length) {
+function generatePassword(lower, upper, number, symbol, length) {
 
-  // functiony loopo thing goes here
-  
+  // password init
+  let generatedPassword = '';
+  // types count const
+  const typesCount = lower + upper + number + symbol;
+  // types arrary filter
+  const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(
+    // things go here
+  )
+    // here be dragons....maybe a solve to this function.............................................
 }
