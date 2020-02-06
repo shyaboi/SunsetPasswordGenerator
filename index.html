@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <!-- password gen wrapper -->
   <div class="wrapper">
     <header>
       <h1>Password Generator</h1>
@@ -22,29 +23,32 @@
       <div class="card-body">
         <textarea id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
       </div>
+      <!-- settings -->
       <div class="settings">
-        <input type="number" id="length" min="2" max="200"
+        <!-- length of password string setting -->
+        <input type="number" id="length" min="2" max="9999999"
         value="12">
+        <!-- uppercase selection box -->
         <div class="setting">
         <label for="uppercase">uppercase</label> 
         <input type="checkbox" id="uppercase" checked /> 
       </div>
-
+<!-- lowercase selection box -->
       <div class="setting">
         <label for="lowercase">lowercase</label> 
         <input type="checkbox" id="lowercase" checked /> 
       </div>
-      
+      <!-- number selection box -->
       <div class="setting">
         <label for="number">number</label> 
         <input type="checkbox" id="number" checked /> 
       </div>
-      
+      <!-- symbol selection box -->
       <div class="setting">
         <label for="symbol">symbol</label> 
         <input type="checkbox" id="symbol" checked /> 
       </div>
-
+<!-- gen button -->
       </div>
       <div class="card-footer">
         <button id="generate" class="btn">Generate Password</button>

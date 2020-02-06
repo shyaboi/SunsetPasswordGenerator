@@ -35,3 +35,29 @@ function randoASCII() {
   const symbols = '!@#$%^&*(){}|\+=_-<>?/"';
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
+
+// click generate even listener for click button and check for checkbox status and 
+generateEl.addEventListener('click', () => {
+  const length = +lengthEl.value;
+  const hasLower = lowercaseEl.checked;
+  const hasUpper = uppercaseEl.checked;
+  const hasNumber = numberEl.checked;
+  const hassymbol = symbolEl.checked;
+
+// password text handoff.
+  passwordEl.innerText = generatePassword(
+    hasLower,
+    hasUpper,
+    hasNumber,
+    hassymbol,
+    length
+  );
+
+});
+
+// password gen function
+function generatePassword(lower, upper, number, symbol,length) {
+
+  // functiony loopo thing goes here
+  
+}
